@@ -13,6 +13,25 @@ Project is created with:
 * mocha : 10.2.0
 
 ## Setup
+Create .env file with the variables:
+PS: the data provided are for coding challenge purpose.
+
+```
+HOST=localhost
+PORT=3001
+
+DATABASE_HOST=127.0.0.1
+DATABASE_PORT=27017
+DATABASE_NAME=air-quality-db
+DATABASE_USERNAME= YOUR_DATABASE_USERNAME
+DATABASE_PASSWORD= YOUR_DATABASE_PASSWORD
+
+COUNTRY_LAT= YOUR_COUNTRY_LATITUDE
+COUNTRY_LON= YOUR_COUNTRY_LONGITUDE
+
+API_KEY= YOUR_API_KEY_FROM_YOUR_IQAIR
+```
+
 To install locally the project using yarn : 
 ```
 yarn install
@@ -20,18 +39,24 @@ yarn install
 
 To run the project in development mode :
 ```
-npm run dev
+yarn run dev
 ```
 
 ## Endpoints
 
-### GET Air Quality with a given zone
+### GET Nearest City Air Quality.
 ```
-http://localhost:3001/api/pollutions/nearestCity
+http://localhost:3001/api/pollutions/nearestCity?lat={{LATITUDE}}&lon={{LONGITUDE}}&key={{API_KEY}}
 ```
 Return nearest city's air quality, using GPS coordinates or IP geolocation.
 
-#### Quert parameters
+### GET Most Polluted City ex. Paris.
+
+```
+http://localhost:3001/api/pollutions/mostPollutedCity?lat={{LATITUDE}}&lon={{LONGITUDE}}&key={{API_KEY}}
+```
+
+#### Query parameters
 ```json
 {
     "lat": "48.856613",
