@@ -56,15 +56,6 @@ Return nearest city's air quality, using GPS coordinates or IP geolocation.
 http://localhost:3001/api/pollutions/mostPollutedCity?lat={{LATITUDE}}&lon={{LONGITUDE}}&key={{API_KEY}}
 ```
 
-#### Query parameters
-```json
-{
-    "lat": "48.856613",
-    "lon": "2.352222",
-    "key": "2f3bbab4-b50b-467f-a0e8-b43ea2cfa505"
-}
-```
-
 ## CRON JOB
 The cron job implemented on the /src/utils/pollution.util.js file runs to check the air quality for the Paris zone every 1 minute than it saves them in the database with date and time when saving it.
 
