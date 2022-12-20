@@ -23,11 +23,6 @@ To run the project in development mode :
 npm run dev
 ```
 
-To run the project in production mode :
-```
-npm run start
-```
-
 ## Endpoints
 
 ### GET Air Quality with a given zone

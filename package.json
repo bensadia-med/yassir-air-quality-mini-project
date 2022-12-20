@@ -4,7 +4,7 @@
   "description": "A REST API responsible for exposing the air quality information of a nearest city to GPS coordinates using iqair.",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "dev": "nodemon index.js",
     "test": "mocha ./test/unit/**/*.spec.js"
   },
   "repository": {
