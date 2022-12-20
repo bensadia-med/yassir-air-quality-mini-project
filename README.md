@@ -61,5 +61,5 @@ The cron job implemented on the /src/utils/pollution.util.js file runs to check 
 ## Tests
 To run the tests : 
 ```
-yarn text
+yarn test
 ```
