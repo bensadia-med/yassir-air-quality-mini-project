@@ -14,7 +14,6 @@ Project is created with:
 
 ## Setup
 Create .env file with the variables:
-PS: the data provided are for coding challenge purpose.
 
 ```
 HOST=localhost
